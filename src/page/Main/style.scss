@@ -1,0 +1,23 @@
+
+
+.main{
+    margin-top: 32px;
+    
+    &__cards{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 540px ) {
+ 
+    .main{
+        &__cards{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+
+
+.basket-page{
+    margin-top: 70px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        display: flex;
+        align-items: center;
+
+        svg{
+            margin-right: 14px;
+        }
+        h2{
+            margin-top: 3px;
+        }
+    }
+
+    &__all-delete{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #B6B6B6;
+        svg{
+            margin-right: 5px;
+        }
+
+        svg path, span {
+            transition-duration: 0.3s;
+        }
+
+        
+        &:hover{
+            color: #000;
+            svg path{
+                stroke: #000;
+            }
+        }
+    }
+
+    
+    &__main{
+        margin-top: 30px;
+    }
+
+    &__footer{
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            margin-top: 40px;
+        }
+    }
+
+    &__total-quantity, &__total-price{
+        font-size: 22px;
+        span{
+            font-weight: 700;
+        }
+    }
+    &__total-price span{ 
+        color: #FE5F1E;
+    }
+
+    &__link-back, &__btn-order{
+        padding: 18px 37px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #D3D3D3;
+        border-radius: 30px;
+        font-size: 16px;
+        transition-duration: 0.3s;
+        align-items: center;
+        svg{
+            margin-right: 10px;
+        }
+        svg path, svg{
+            transition-duration: 0.3s;
+        }
+    }
+
+    &__link-back{
+        color: #CACACA;
+
+        &:hover{
+            border-color: #FE5F1E;
+            color: #FE5F1E;
+            
+            svg path{
+                stroke: #FE5F1E;
+            }
+            svg{
+                transform: translateX(-5px);
+            }
+        }
+    }
+
+    &__btn-order{
+        background-color: #FE5F1E;
+        border-color: #FE5F1E;
+        color: #fff;
+        font-weight: 700;
+
+        &:hover{
+            background-color:transparent;
+            color: #FE5F1E;
+        }
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    .basket-page {
+        &__link-back, &__btn-order {
+            padding: 9px 25px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .basket-page{
+        &__footer{
+            > div {
+                flex-wrap: wrap;
+                margin-top: 30px;
+                p, button{
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}

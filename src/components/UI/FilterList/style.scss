@@ -1,0 +1,98 @@
+
+.filter-list {
+
+    &__wrapper{
+        position: relative;
+    }
+
+    &__title{
+        display: flex;
+        align-items: center;
+
+        span{
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            svg{
+                transform: rotate(180deg);
+                margin-right: 4px;
+                transition-duration: 0.3s;
+            }
+
+            &:first-child{
+                font-weight: 700;
+            }
+            &:last-child{
+                color: #FE5F1E;
+                text-decoration: dashed;
+                cursor: pointer;
+                border-bottom: 1px dotted #FE5F1E;
+                transition-duration: 0.3s;
+                &:hover{
+                    border-color: transparent;
+                }
+            }
+        }
+        
+    }
+    &__body{
+        width: 132px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 13px 0px;
+        overflow: hidden;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        top: 15px;
+        right: 0;
+        transition-duration: 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        button{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px 14px;
+            transition-duration: 0.3s;
+            font-weight: 700;
+            &.active{
+                background-color: #FE5F1E0D;
+                color: #FE5F1E;
+            }
+            &:hover{
+                background-color: #FE5F1E0D;
+                
+            }
+        }
+    }
+    &.active{
+        .filter-list__body{
+            
+            visibility: visible;
+            opacity: 1;
+        }
+        .filter-list__title{
+            svg{
+                transform: rotate(0deg);
+            }
+            span:last-child{
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .filter-list{
+        margin-top: 14px;
+        &__title {
+            span, b {
+                white-space: nowrap;
+            }
+        }
+    }
+}

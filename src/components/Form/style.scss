@@ -1,0 +1,255 @@
+
+.modal-login{
+
+    &__input{
+        margin-top: 30px;
+        &:nth-child(2){
+            margin-top: 0;
+        }
+        input{
+            &:focus{
+                background-color: #00000008;
+                border-bottom: solid 1px #FE5F1E;
+            }
+        }
+        &:first-child{
+            margin-top: 0;
+        }
+        &.error{
+            input{
+                background-color: #00000008;
+                border-bottom: solid 1px red;
+            }
+        }
+        .error-notify{
+            font-size: 14px;
+            margin-top: 8px;
+            color: red;
+        }
+    }
+    label{
+        width: 100%;
+        span{
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        input{
+            border-radius: 13px;
+            display: block;
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            background: #00000021;
+            // border: solid 1px #FE5F1E;
+            padding: 0px 14px;
+
+            transition-duration: 0.3s;
+        }
+    }
+
+    &__submit{
+        width: 150px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: #00000021;
+        margin-top: 40px;
+        margin-left: auto;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 10px;
+        transition-duration: 0.3s;
+        background-color: #FE5F1E;
+        color: #fff;
+        border: solid 1px #FE5F1E;
+
+
+        @media(min-width: 901px) {
+            &:hover{
+                background-color: transparent;
+                color: #FE5F1E;
+            }
+        }
+    }
+    &__notify {
+
+        display: block;
+        font-size: 16px;
+        color: red;
+        margin-left: 7px;
+        margin-bottom: 6px;
+        opacity: 0;
+        visibility: hidden;
+        transition-duration: 0.3s;
+        &.show{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+.modal-setting-pizza{
+    &__input{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        
+        > div { 
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            input{
+                margin-top: 0px;
+                margin-left: 0 ;
+            }
+        }
+        img{
+            width: 45px;
+            height: 45px;
+            margin-right: 5px; 
+        }
+
+        input{
+            display: block;
+            font-size: 18px;
+            margin-left: 10px;
+            flex: 1 1 auto; 
+            border-bottom: 1px solid #0000003f;  
+
+
+            &.default{
+                border-color: red;
+            }
+
+            &[type='number'] {
+                flex: 0 0 100px;
+                width: 50px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__select{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        >p{
+            margin-right: 10px;
+        }
+    }
+
+    &__checkbox{
+        margin-top: 30px;
+        display: flex;
+        max-width: 400px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >p{
+            font-size: 18px;
+            flex: 1 1 auto;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        >div{
+            margin-right: 20px;
+            >span{
+                display: block;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+
+                span{
+                    font-size: 15px;
+                    margin-right: 5px;
+                    color: #000000a4;
+                }
+                input[type='checkbox']{
+                    display: none;
+                }
+                input[type="number"]{
+                    flex: 0 0 60px;
+                    width: 60px
+                }
+
+                input:checked + label{
+                    border-color: #FE5F1E !important;
+                    &:before{
+                        opacity: 1;
+                    }
+                }
+            }
+            label{
+                cursor: pointer;
+                display: block;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: solid 1px #00000070;
+                position: relative;
+                transition-duration: 0.3s;
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 50%;
+                    height: 50%;
+                    background-color: #FE5F1E;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    transition-duration: 0.3s;
+                    opacity: 0;
+                }
+            }
+        }
+
+
+    }
+
+    &__put{
+        margin-left: auto;
+        margin-top: 50px;
+        display: block;
+        border: solid 1px #FE5F1E;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: 700;
+        background-color: #FE5F1E;
+        transition-duration: 0.3s;
+        color: #fff;
+        font-size: 14px;
+        height: 41px;
+        @media(min-width: 901px) {
+            &:hover{
+                background-color: transparent;
+                color: #FE5F1E;
+            }
+        }
+
+        .loading{
+            width: 100px;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &.default{
+            pointer-events: none;
+        }
+    }
+}

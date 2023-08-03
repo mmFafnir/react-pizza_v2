@@ -1,0 +1,43 @@
+
+.filter{
+
+    &__wrapper{
+        display: flex;
+        // flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }   
+
+    &__left, &__right{
+        display: flex;
+        align-items: center;
+        
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .filter{
+        &__wrapper{
+            align-items: flex-start;
+        }
+
+        &__left{
+            flex-wrap: wrap;
+            max-width: 500px;
+            button{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .filter{
+
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+    }
+}

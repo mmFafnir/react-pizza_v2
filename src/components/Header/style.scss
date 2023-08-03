@@ -1,0 +1,140 @@
+
+.header{
+    padding: 49px 62px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        >div{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__right{
+        flex:  1 1 auto;
+        justify-content: flex-end;
+    }
+
+    &__btns{
+        background-color: #FE5F1E;
+        color: #fff;
+        font-weight: 700;
+        padding: 11px 23px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        span{
+            line-height: 1;
+        }
+        &::before{
+            content: '';
+            display: block;
+            background-color: #FFFFFF40;
+            margin: 0px 13px;
+            width: 1px;
+            height: 25px;
+            order: 2;
+        }
+    }
+
+    &__log-in{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+
+        svg{
+            width: 100%;
+            height: 100%;
+            path{
+                fill: #0000006b;
+                transition-duration: 0.3s;
+            }
+        }
+
+        @media (min-width: 700px) {
+            
+            &:hover{
+                path{
+                    fill: #000;
+                }
+            }
+        }
+    }
+}
+
+.header-price-btns{
+
+    &__link{
+        display: flex;
+        align-items: center;
+        order: 3;
+
+
+        svg{
+            margin-right: 5px;
+        }
+    }
+}
+
+
+
+@media (max-width: 1300px) {
+    .header{
+        
+        &__right{
+            flex: 1 1 100%;
+            margin-top: 20px;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+
+            >div, >a {
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+        }
+
+        &__btns{
+            span {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .header{
+       padding: 49px 35px
+    }
+}
+
+@media (max-width: 810px) {
+    .header{
+        &__left{
+            flex: 1 1 auto;
+            justify-content: space-between;
+        }
+        &__btns{
+            font-size: 15px;
+            padding: 6px 19px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header{
+        padding: 35px 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .header{
+        &__left{
+            flex-wrap: wrap;
+        }
+        &__logo{
+            margin-bottom: 20px;
+        }
+    }
+}

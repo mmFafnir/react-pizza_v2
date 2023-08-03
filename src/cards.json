@@ -1,0 +1,341 @@
+{
+   "cards": [
+        {
+            "id": "1",
+            "title": "Чизбургер-пицца",
+            "img": "",
+            "defaultId": 1,
+            "price": "500",
+            "quantity": 0,
+            "category": "Острые",
+            "rating": 3,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": true
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": false
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": true
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": true
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": true
+                    }
+                ]  
+            }
+        },
+
+        {
+            "id": "2",
+            "title": "Сырная",
+            "img": "",
+            "defaultId": 2,
+            "price": "300",
+            "quantity": 2,
+            "category": "Мясные",
+            "rating": 5,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": false
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": true
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": true
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": false
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": false
+                    }
+                ]  
+            }
+        },
+
+        {
+            "id": "3",
+            "title": "Креветки по-азиатски",
+            "img": "",
+            "defaultId": 3,
+            "price": "700",
+            "quantity": 0,
+            "category": "Гриль",
+            "rating": 5,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": true
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": true
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": true
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": true
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": true
+                    }
+                ]  
+            }
+        },
+
+        {
+            "id": "4",
+            "title": "Сырный цыпленок",
+            "img": "",
+            "defaultId": 4,
+            "price": "200",
+            "quantity": 0,
+            "category": "Вегетарианская",
+            "rating": 2,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": true
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": true
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": false
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": true
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": true
+                    }
+                ]  
+            }
+        },
+
+        {
+            "id": "5",
+            "title": "Чизбургер-пицца",
+            "img": "",
+            "defaultId": 5,
+            "price": "100",
+            "quantity": 0,
+            "category": "Закрытые",
+            "rating": 1,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": true
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": true
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": true
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": false
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": true
+                    }
+                ]  
+            }
+        },
+
+        {
+            "id": "6",
+            "title": "Сырная",
+            "img": "",
+            "defaultId": 6,
+            "price": "300",
+            "quantity": 0,
+            "category": "Острые",
+            "rating": 4,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": true
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": true
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": true
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": false
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": true
+                    }
+                ]  
+            }
+        },
+
+
+        {
+            "id": "7",
+            "title": "Креветки по-азиатски",
+            "img": "",
+            "defaultId": 7,
+            "price": "400",
+            "quantity": 0,
+            "category": "Мясные",
+            "rating": 5,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": true
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": true
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": true
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": true
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": true
+                    }
+                ]  
+            }
+        },
+
+
+        {
+            "id": "8",
+            "title": "Сырный цыпленок",
+            "img": "",
+            "defaultId": 8,
+            "price": "800",
+            "quantity": 0,
+            "category": "Гриль",
+            "rating": 2,
+            "options": {
+                "type": [
+                    {
+                        "value": "тонкое",
+                        "sale": 100,
+                        "checked": true
+                    },
+                    {
+                        "value": "традиционное",
+                        "sale": 200,
+                        "checked": true
+                    }
+                ],
+                "size": [
+                    {
+                        "value": "26 см.",
+                        "sale": 40,
+                        "checked": true
+                    },
+                    {
+                        "value": "30 см.",
+                        "sale": 50,
+                        "checked": false
+                    },
+                    {
+                        "value": "40 см.",
+                        "sale": 60,
+                        "checked": true
+                    }
+                ]  
+            }
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Modal from '../../components/Modal';
 import ModalLogin from '../../components/Form/Login';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
@@ -7,7 +7,7 @@ import ModalSettingPizza from '../../components/Form/SettingPizza';
 import AddPizza from '../../components/Form/AddPizza';
 import { useLocation } from 'react-router-dom';
 
-const ModalLayout = () => {
+const ModalLayout:FC = () => {
     const {modal} = useTypeSelector(state => state.modal);
     const location = useLocation();
     return (

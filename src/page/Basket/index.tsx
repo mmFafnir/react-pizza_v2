@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import {useNavigate} from 'react-router-dom';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,7 +11,7 @@ import EmptyCart from '../../components/UI/Error/EmptyCart';
 
 import './style.scss';
 
-const Basket: React.FC = () => {
+const Basket:FC = () => {
 
     const cards = useSelector(selectCart);
     const totalPrice = useSelector(selectTotalPrice);

@@ -1,8 +1,9 @@
 
+import { FC } from 'react';
 import img from '../../assets/img/404.jpg';
 import './style.scss';
 
-const index = () => {
+const NotFound:FC = () => {
     return (
         <div className='not-found'>
              <div className="not-found__wrapper">
@@ -14,4 +15,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default NotFound;

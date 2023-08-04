@@ -1,12 +1,12 @@
-import React from 'react';
+import { ReactNode, FC } from 'react';
 import { BrowserRouter } from "react-router-dom";
 
 
 interface IProps {
-    children: React.ReactNode
+    children: ReactNode
 }
 
-const Router: React.FC<IProps> = ({children}) => {
+const Router:FC<IProps> = ({children}) => {
     return (
         <BrowserRouter>
             {children}

@@ -1,4 +1,4 @@
-import React from 'react';
+import {Dispatch, SetStateAction, FC} from 'react';
 
 
 import './style.scss';
@@ -11,10 +11,10 @@ const pages = [1,2];
 
 interface IProps {
     page: number,
-    setPage: React.Dispatch<React.SetStateAction<number>>
+    setPage: Dispatch<SetStateAction<number>>
 }
 
-const Pagination: React.FC<IProps> = ({page, setPage}) => {
+const Pagination: FC<IProps> = ({page, setPage}) => {
 
     const onClickButton = (action:Actions|number ) => {
         switch (action) {

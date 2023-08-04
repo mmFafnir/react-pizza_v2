@@ -1,4 +1,4 @@
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, HashRouter} from "react-router-dom";
 import { useTypeSelector } from "./hooks/useTypeSelector";
 import { UsersStatusActions } from "./store/Slices/loginSlice/type";
 
@@ -13,11 +13,13 @@ import MainLayout from './layouts/MainLayout';
 import './assets/scss/App.scss'
 import './assets/scss/anim.scss'
 
-const App = () => {
-  
+
+const App = () => {  
   const { user } = useTypeSelector(state=> state.login);
   
   return (
+    <HashRouter>
+
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="" element={<Main />} />
@@ -30,6 +32,7 @@ const App = () => {
         </Route>
         
       </Routes>
+    </HashRouter>
   );
 }
 

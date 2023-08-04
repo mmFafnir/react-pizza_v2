@@ -6,7 +6,6 @@ import { useTypeSelector } from '../../../hooks/useTypeSelector';
 import { NotifyActions } from '../../../store/Slices/loginSlice/type';
 import { closeModal } from '../../../store/Slices/modalSlice';
 import { useNavigate } from 'react-router-dom';
-import { Status } from '../../../store/types/status';
 
 
 enum ErrorInputActions {

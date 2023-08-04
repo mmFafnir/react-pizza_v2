@@ -1,20 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react';
+import {FC, useEffect, useState } from 'react';
 
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { selectTotalLength, selectTotalPrice } from '../../store/Slices/cartPizzaSlice/selectors';
 import { ModalEnum, modalOpen } from '../../store/Slices/modalSlice';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
+import { UsersStatusActions } from '../../store/Slices/loginSlice/type';
 
 import Logo from '../UI/Logo';
 import Search from '../UI/Search';
     
 import './style.scss';
-import { UsersStatusActions } from '../../store/Slices/loginSlice/type';
 
-const Header = () => {
-    
-    
+const Header:FC = () => {
+
     const totalPrice = useSelector(selectTotalPrice);
     const totalLength = useSelector(selectTotalLength);
     const { user } = useTypeSelector(state => state.login);

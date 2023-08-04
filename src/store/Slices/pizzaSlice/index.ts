@@ -3,7 +3,6 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { TypePizza } from "../../types/pizza";
 import { Status } from "../../types/status";
 import { deletePizza, fetchPizza, postPizza, putPizza } from "./asyncAction";
-import { stat } from "fs";
 
 
 interface IState {
@@ -56,7 +55,6 @@ const pizzaSlice = createSlice({
       state.loading = Status.LOADING;
     })
     builder.addCase(putPizza.fulfilled, (state, action: PayloadAction<TypePizza>) => {
-      console.log(state.items)
       state.items = state.items.map((pizza) => (pizza.defaultId === action.payload.defaultId) ? action.payload : pizza);
       state.loading = Status.SUCCESS
     })

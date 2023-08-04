@@ -1,11 +1,11 @@
-import React from 'react';
-
-import gif from './sad-pizza.gif';
-import './style.scss'
-import 'swiper/css';
+import {FC} from 'react';
 import Recommend from '../../Recommend';
 
-const NoPizza: React.FC = () => {
+import gif from './sad-pizza.gif';
+import 'swiper/css';
+import './style.scss'
+
+const NoPizza:FC = () => {
 
     
     return (

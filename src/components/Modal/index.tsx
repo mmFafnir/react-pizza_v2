@@ -1,6 +1,5 @@
-import { FC, KeyboardEvent, MouseEvent, ReactNode, useEffect, useState } from 'react';
+import { FC, MouseEvent, ReactNode, useEffect } from 'react';
 
-import { useTypeSelector } from '../../hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
 import { closeModal } from '../../store/Slices/modalSlice';
 import { isHtmlElement } from '../../assets/scripts/isHtmlElement';
@@ -56,7 +55,6 @@ const Modal:FC<IProps> = ({children}) => {
             className={`modal active`}
             style={style}
             onClick={(e) => modalCloseHandler(e)}
-            // onKeyUp={(e) => e.key === 'esc' ? modalCloseHandler(e) : null}
         > 
             <div className='modal__wrapper'>
                 <div className='modal__close'>

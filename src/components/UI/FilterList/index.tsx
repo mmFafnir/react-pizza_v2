@@ -1,4 +1,4 @@
- import React, { useState } from 'react';
+ import { FC, useState } from 'react';
  import { switchArr } from '../../../assets/scripts/switchArr';
  import { useDispatch } from 'react-redux';
  import {  setSort } from '../../../store/Slices/filterSlice';
@@ -25,7 +25,7 @@
     }
  ] 
 
- const FilterList: React.FC = () => {
+ const FilterList: FC = () => {
     const [isHover, setIsHover] = useState<boolean>(false);
     const [listBtns, setListBtns] = useState<TypeSortFilter[]>(defaultListBtns);
     

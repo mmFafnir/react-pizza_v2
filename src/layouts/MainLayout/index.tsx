@@ -1,11 +1,10 @@
-import React from 'react';
+import {FC} from 'react';
 
 import { Outlet } from 'react-router-dom';
 import Header from "../../components/Header";
 import ModalLayout from '../ModalLayout';
-import { useTypeSelector } from '../../hooks/useTypeSelector';
 
-const index: React.FC = () => {
+const index:FC = () => {
 
     
     return (

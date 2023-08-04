@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 import { useTypeDispatch } from '../../hooks/useTypeDispatch';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
@@ -15,7 +15,7 @@ import gif from './loading.gif'
 
 const sort = { checked: true, value: 'по алфавиту', property: PropertySort.TITLE};
 
-const Admin = () => {
+const Admin:FC = () => {
 
     const {items, status} = useTypeSelector((state) => state.pizza);
     const dispatch = useTypeDispatch();

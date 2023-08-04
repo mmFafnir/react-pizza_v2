@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { fetchRecommendPizza } from '../../store/Slices/recommendPizzaSlice/asyncAction';
@@ -9,7 +9,7 @@ import Card from '../Card';
 
 import './style.scss';
 
-const Recommend: React.FC = () => {
+const Recommend: FC = () => {
 
     const { items } = useTypeSelector(state => state.recommend);
     const dispatch = useTypeDispatch();
@@ -39,26 +39,6 @@ const Recommend: React.FC = () => {
     }, [])
 
 
-
-
-    const removeDub = (arr: number[]) => {
-        const newArr:number[] = [];
-        arr.forEach((num, i) => {
-            if(arr.find(j => j !== num)) {
-                newArr.push(num)
-            } 
-        })
-        return newArr
-    }
-
-
-    console.log(removeDub([1, 1, 2, 2, 3]))
-
-
-
-
-
-    console.log(windowSize)
     return (
         <div className='recommend'>
             <h3>Рекомендованные пиццы</h3>

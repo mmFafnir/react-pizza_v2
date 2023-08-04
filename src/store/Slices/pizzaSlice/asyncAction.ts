@@ -4,7 +4,6 @@ import { TypePizza } from "../../types/pizza";
 import { Status } from "../../types/status";
 import axios from "axios";
 import urls from "../../urls";
-import { URL } from "url";
 
 
 
@@ -14,24 +13,15 @@ export const fetchPizza = createAsyncThunk<TypePizza[], TypeFilter>(
         const { category, sort, search, page=1, limit=4  } = params;
         let url = urls.pizza + '?';
         url = url + `orderby=${sort.property}&`;
-        // url.searchParams.append('orderby', sort.property);
         if(limit !== null) {
             url = url + `page=${String(category.length !== 0 ? 1 : page)}&limit=${limit}&`;
-            // url.searchParams.append('page', String(category.length !== 0 ? 1 : page));
-            // url.searchParams.append('limit', String(limit));
         }
-        if(search.length > 0) {
+        if(search.length > 0) { 
             url = url + `search=${search}&`;
-            // url.searchParams.append('search', search);
         } else {
             url = url + `category=${category}&`
-            // url.searchParams.append('category', category);
         }
-
         url = url + `order=${sort.property === PropertySort.TITLE ? 'asc' : 'desc'}`
-        console.log(url)
-        
-        // url.searchParams.append('order', sort.property === PropertySort.TITLE ? 'asc' : 'desc')
         const {data}  = await axios.get<TypePizza[]>(String(url));
         
         if(data.length === 0) return thunkAPI.rejectWithValue(Status.EMPTY);

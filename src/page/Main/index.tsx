@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 import { Status } from '../../store/types/status';
 import { useTypeDispatch } from '../../hooks/useTypeDispatch';
@@ -17,7 +17,7 @@ const templateArr: number[] = [];
 for(let i=0; i < 8; i++) {
     templateArr.push(i)
 }
-const Main: React.FC = () => {
+const Main:FC = () => {
     
     const [page, setPage] = useState<number>(1);
 
@@ -35,6 +35,8 @@ const Main: React.FC = () => {
     
     useEffect(() => {
         dispatch(fetchPizza({category, sort, search, page, limit}))
+
+        console.log('asd')
     }, [])
 
     return (
@@ -58,9 +60,7 @@ const Main: React.FC = () => {
                             )
                         }
                     </div>
-                    {
-                        status !== Status.EMPTY && category === ''  && search === '' ? <Pagination page={page} setPage={setPage}/> : null
-                    }
+                    {status !== Status.EMPTY && category === ''  && search === '' ? <Pagination page={page} setPage={setPage}/> : null}
                 </main>
             </div>
         </div>

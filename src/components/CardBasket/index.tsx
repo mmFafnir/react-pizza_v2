@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { FC } from 'react';
 
 import { useDispatch } from 'react-redux';
 import { deleteItem, minusQuantity, plusQuantity } from '../../store/Slices/cartPizzaSlice';
@@ -35,7 +35,7 @@ const params: UseAnimateProps = {
 }
 
 
-const CardBasket: React.FC<IProps> = ({card}) => {
+const CardBasket:FC<IProps> = ({card}) => {
 
 
     const { handleClose, style } = useAnimate(params)

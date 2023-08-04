@@ -15,7 +15,6 @@ const Search:FC = () => {
     const [isActive, setIsActive] = useState<boolean>(false);
     const [isFocus, setIsFocus] = useState<boolean>(false);
 
-    // const location = useLocation();
     const navigate = useNavigate();
 
     const glassEventClick = (status: boolean) => {

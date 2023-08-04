@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { fetchPizzaById } from '../../store/Slices/pizzaByIdSlice/asyncActions';
 import { selectCartAllById } from '../../store/Slices/cartPizzaSlice/selectors';
@@ -19,6 +19,7 @@ import NoPizza from '../../components/UI/Error/NoPizza'
 import loaderGif from './loader.gif';
 
 import './style.scss'; 
+import Recommend from '../../components/Recommend';
 
 enum SizeValues {
     MIDDLE = '30 см.', 
@@ -27,7 +28,7 @@ enum SizeValues {
 }
 
 
-const Pizza: React.FC = () => {
+const Pizza: FC = () => {
 
     const { defaultId } = useParams();
     
@@ -182,6 +183,7 @@ const Pizza: React.FC = () => {
                         </div>
                     </div>
                 </main>
+                <Recommend/>
             </div>
         </div>
     );

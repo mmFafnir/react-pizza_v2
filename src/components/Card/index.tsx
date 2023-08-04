@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import './style.scss'
-import img from './card.png'
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem} from '../../store/Slices/cartPizzaSlice';
 import { Link } from 'react-router-dom';
@@ -9,6 +7,7 @@ import { calcTotalLength } from '../../assets/scripts/calcTotalLength';
 import { selectCartAllById } from '../../store/Slices/cartPizzaSlice/selectors';
 import { TypePizza } from '../../store/types/pizza';
 
+import './style.scss'
 
 
 interface IProps {

@@ -1,7 +1,7 @@
-import React from "react"
+import {FC} from "react"
 import ContentLoader from "react-content-loader"
 
-const MyLoader = () => (
+const MyLoader: FC = () => (
   <ContentLoader 
     speed={2}
     width={280}
